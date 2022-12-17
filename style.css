@@ -1,0 +1,41 @@
+body {
+  background-image: url(./assets//bk.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.drop-container {
+  width: 450px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px #ffd700 solid;
+  border-radius: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  /* opacity: 0.5; */
+  transition: 0.7s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  box-shadow: 12px 11px 64px -10px rgba(64, 51, 8, 0.83);
+  -webkit-box-shadow: 12px 11px 64px -10px rgba(64, 51, 8, 0.83);
+  -moz-box-shadow: 12px 11px 64px -10px rgba(64, 51, 8, 0.83);
+}
+
+.drop-container.over {
+  opacity: 1;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.file-preview img {
+  max-width: 250px;
+}
